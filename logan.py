@@ -4346,7 +4346,7 @@ class LoganAssistant:
                             print(f"🪙 Token usage: {current_tokens} tokens")
 
                         # Manage context based on Claude's 200k token limit
-                        should_trim = (current_tokens > 150000) or (len(messages) > 30)
+                        should_trim = current_tokens > 185000
 
                         if should_trim:
                             print(
